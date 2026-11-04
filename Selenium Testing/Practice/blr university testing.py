@@ -1,0 +1,15 @@
+import time
+from selenium import webdriver
+driver=webdriver.Chrome()
+driver.get('https://bangaloreuniversity.karnataka.gov.in/')
+# driver.maximize_window()
+# driver.find_element('class name','ribbon-sm').click()
+link=driver.find_elements('tag name','a')
+images=driver.find_elements('tag name','img')
+buttons=driver.find_elements('tag name','button')
+dropdowns=driver.find_elements('tag name','select')
+print('no of links is',len(link))
+print('no of images is',len(images))
+print('no of buttons is',len(buttons))
+print('no of dropdowns is',len(dropdowns))
+# time.sleep(5)
