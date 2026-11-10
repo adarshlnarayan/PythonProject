@@ -1,5 +1,4 @@
 import time
-import openpyxl
 import Utilities
 from selenium import webdriver
 driver = webdriver.Chrome()
